@@ -4,7 +4,15 @@
     <head>
 
     <!-- Template styles -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/random.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.0.js">
+        $('#myTable').load('https://25karma.xyz/guild/xAyman #sortablelist');
+    </script>
+    <script type="text/javascript">
+      RANDOM_CSS.printlinktag();
+    </script>
     <script type="text/javascript">
       RANDOM_CSS.printlinktag();
     </script>
@@ -98,8 +106,8 @@ function aud_play_pause() {
                     <span class="icon-bar"></span>
                 </button>
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.html" title="NoRage">
-                    <i class="fab fa-discord"aria-hidden="true"></i><span class="main-color">NoRage</span><span class="main-color"></span>
+                <a class="navbar-brand" title="NoRage">
+                    <i class="fab fa-discord"aria-hidden="true"></i><span class="main-color">NoRage</span><span class="main-color">  <img class="techno" src="https://cravatar.eu/helmhead/technoblade/190.png"></span><span class="technoblade-text">#F*ckCancer</span>
                 </a><!-- Logo end -->
             </div>
             <!-- Main menu -->
@@ -199,17 +207,26 @@ function aud_play_pause() {
             <div class="text-center">
                 <h2 class="standard-header" data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">Guild Members</h2>
             </div>
-            <div class="text-center" data-100p-top="transform[swing]:translateX(-25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
-            </div>
-            <div class="text-center">
-                <div class="btn-more-container" data-100p-top="transform[swing]:translateY(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateY(0);opacity[swing]:1">
-                    <a href="https://25karma.xyz/guild/xAyman" target="_blank" class="btn btn-more clearfix" title="More">
-                        <span><span>See</span></span>
-                    </a>
-                </div>
-            </div>
+        
+                    <div class="panel panel-primary" data-100p-top="transform[swing]:translateX(-50px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
+                        <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseZero">
+                                        
+                                        <span class="text-center">SEE</span>
+                                        <span class="panel-icon">
+                                            <i class="fa fa-question" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapseZero" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p><iframe src="https://25karma.xyz/guild/xAyman" width="100%" height="800"></iframe>
+                                </div>
+                             </div>
+                        </div>
         </div>
-    </div>
 
     <!-- faq -->
 
@@ -224,7 +241,7 @@ function aud_play_pause() {
             <div class="text-center">
                 <h2 class="standard-header" data-100p-top="transform[swing]:translateX(25px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">FAQ</h2>
             </div>
-            <p class="section-description text-center lead">If you have any <span class="highlight">questions</span> about our <strong>guild</strong>, then you propably you can find an <span class="highlight">answer</span> in this section. We try to <strong>update</strong> this section <strong>frequently</strong>.</p>
+            <p class="section-description text-center lead">If you have any <span class="highlight">questions</span> about our <strong>guild</strong>, then you propably can find an<span class="highlight">answer</span> in this section. We try to <strong>update</strong> it more <strong>frequently</strong>.</p>
 
             <div class="panel panel-primary" data-100p-top="transform[swing]:translateX(-50px);opacity[swing]:0" data-75p-top="transform[swing]:translateX(0);opacity[swing]:1">
                 <div class="panel-heading">
@@ -266,7 +283,7 @@ function aud_play_pause() {
                     <div class="panel-heading">
                         <h3 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                <span class="glyphicon glyphicon-plus"></span>What are the requirements?
+                                <span class="glyphicon glyphicon-plus"></span> What are the requirements?
                                 <span class="panel-icon">
                                     <i class="fa fa-question" aria-hidden="true"></i>
                                 </span>
@@ -282,12 +299,12 @@ function aud_play_pause() {
             </div>
         </div>
     </div>
-    </div>
-
+</body>
     <!-- Footer -->
-    <footer class="footer text-center" id="follow-us">
+    <footer>
         <div class="container">
-            <p> &copy; 2022 <a title="xAyman"> NoRage | Crafted By ❤️<a href="https://xayman.net">xAyman</a></a></p>
+            <img src="img/favicon.png" class="logo-bottom">
+            <p class="footer-2 text-center" id="follow-us"> &copy; 2022 <a title="xAyman"> NoRage | Crafted By ❤️<a href="https://xayman.net">xAyman</a></a></p>
         </div>
     </footer>
 
@@ -405,7 +422,7 @@ function aud_play_pause() {
     <script type="text/javascript" src="js/main.min.js"></script>
 
 
-</body>
-<script type="text/javascript" src="js/main.js"></script>
 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
