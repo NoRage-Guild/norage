@@ -11,9 +11,6 @@
     <script type="text/javascript">
       RANDOM_CSS.printlinktag();
     </script>
-    <script type="text/javascript">
-      RANDOM_CSS.printlinktag();
-    </script>
   </div>
 
   <link rel="icon" href="img/favicon.png" type="image/png">
@@ -63,7 +60,6 @@ function aud_play_pause() {
 
     <!-- Modernizr -->
     <script type="text/javascript" src="js/modernizr-custom.min.js"></script>
-
 </head>
 
 <body data-spy="scroll" data-offset="122" data-target="#main-menu" data-skrollr="true">
@@ -192,9 +188,20 @@ function aud_play_pause() {
     </a>
         <div class="container">
             <div class="text text-center">
-                <a class="discord-widget" href="https://discord.gg/6N63uDVC2G" target="_blank" title="Join us on Discord">
-                <p class="section-description text-center lead"><img class="rounded-corners-2" src="https://discordapp.com/api/guilds/890366915527180430/embed.png?style=banner3"></p>
-            </a>            </div>
+                <widgetbot
+  server="890366915527180430"
+  channel="890368004158804070"
+  width="100%"
+  height="400"
+></widgetbot>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
+            </div>
+        <p></p>
+            <div class="text text-center">
+                <a href="https://discord.gg/6N63uDVC2G" target="_blank" title="Join Now" class="btn btn-transparent btn-xl no-margin" data-100p-top="transform[swing]:translateY(20px);opacity[swing]:0" data-75p-top="transform[swing]:translateY(0);opacity[swing]:1"></i> Join Now</a>
+            </div>
+            </div>
             </div>
         </div>
     </div>
@@ -303,7 +310,8 @@ function aud_play_pause() {
     <footer>
         <div class="container">
             <img src="img/favicon.png" class="logo-bottom">
-            <p class="footer-2 text-center" id="follow-us"> &copy; 2022 <a title="xAyman"> NoRage | Crafted By ❤️<a href="https://xayman.net">xAyman</a></a></p>
+            <p class="footer-2 text-center" id="follow-us"> &copy; 2022 NoRage | Crafted By<a title="xAyman" target="_blank">  ❤️<a href="https://xayman.net">xAyman</a></a></p>
+            <p class="text-center" id="follow-us"> <a href="https://github.com/BlueXAyman/norage" target="_blank">Github<strong>    |    </strong><a href="http://status.xayman.net" target="blank">Status Page</a></a></p>
         </div>
     </footer>
 
