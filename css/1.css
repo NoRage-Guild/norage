@@ -9985,6 +9985,21 @@ a {
   bottom: 14px;
   left: 13px;
 }
+
+.standard-section.section-promo1 {
+  overflow: hidden;
+  border-top: 10px solid #2f85d7;
+}
+.standard-section.section-promo1 .triangle.triangle-up {
+  top: -24px;
+}
+.standard-section.section-promo1 .triangle.triangle-up .glyphicon,
+.standard-section.section-promo1 .triangle.triangle-up .fa {
+  top: 14px;
+  right: 15px;
+}
+
+
 .standard-section .overlay {
   z-index: 1;
 }
