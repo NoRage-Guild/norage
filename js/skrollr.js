@@ -1539,9 +1539,6 @@
 		_forceRender = true;
 	};
 
-	/*
-	 * Returns a copy of the constants object where all functions and strings have been evaluated.
-	 */
 	var _processConstants = function() {
 		var viewportHeight = documentElement.clientHeight;
 		var copy = {};
@@ -1554,7 +1551,6 @@
 			if(typeof value === 'function') {
 				value = value.call(_instance);
 			}
-			//Percentage offset.
 			else if((/p$/).test(value)) {
 				value = (value.slice(0, -1) / 100) * viewportHeight;
 			}
@@ -1565,9 +1561,7 @@
 		return copy;
 	};
 
-	/*
-	 * Returns the height of the document.
-	 */
+
 	var _getDocumentHeight = function() {
 		var skrollrBodyHeight = 0;
 		var bodyHeight;

@@ -3,8 +3,25 @@
 
     <head>
 
+        <script>
+            $(document).ready(function() {
+        
+        var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+        var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+        
+        $(".buttonsound").mousedown(function() {
+          audio2.load();
+          audio2.play();
+        });
+          
+        $(".buttonsound").mouseup(function() {
+          audio.load();
+          audio.play();
+        });
+        });
+        </script>
     <!-- Template styles -->
-    <link rel="stylesheet" href="css/staff.css" />
+    <link rel="stylesheet" href="css/1.css" />
     <script type="text/javascript">
       RANDOM_CSS.printlinktag();
     </script>
@@ -29,6 +46,7 @@ function aud_play_pause() {
   }
 }
 </script>
+
     </a>
     </div> 
     
@@ -36,7 +54,7 @@ function aud_play_pause() {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="keywords" content="xayman, minecraftma, mcma, bluexayman, norage, hypixel, hypixel guild" />
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://norage.xayman.net/staff_app">
+    <meta property="og:url" content="https://xayman.net/norage/staff_app">
     <meta property="og:title" content="NoRage | Hypixel Guild Official Website">
     <meta property="og:description" content="NoRage is a new rising hypixel guild made in late 2021. We are a newly formed guild consisting of friends and players from all around the network! We are opening our guild to all members and are looking to make new friends. We play any and all gamemodes, and accept players from all gamemodes.
     ">
@@ -99,22 +117,10 @@ function aud_play_pause() {
                 </button>
                 <!-- Logo -->
                 <a class="navbar-brand" href="index.html" title="NoRage">
-                    <i class="fab fa-discord"aria-hidden="true"></i><span class="main-color">Go Back Home</span><span class="main-color"></span>
+                    <i class="fab fa-discord"aria-hidden="true"></i><span class="main-color">Go Back</span><span class="main-color"></span>
                 </a><!-- Logo end -->
             </div>
-            <!-- Main menu -->
-            <div class="collapse navbar-collapse" id="main-menu">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#home">
-                            <span class="main-link">Apply</span>
-                            <span class="additional-info-link bracket">
-                                Staff Application
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div><!-- Main menu end -->
+
         </div>
     </div><!-- Navbar end -->
 
@@ -133,8 +139,8 @@ function aud_play_pause() {
             </a>
                 <p class="section-description"><span class=""><span class="main-color"></span></p>
 
-                <a href="#" class="btn-border btn-primary" title="Click to open application form" data-toggle="modal" data-target="#order-modal">
-                    <span class="btn btn-primary btn-lg"><i class="fa fa-play" aria-hidden="true"></i> APPLY FOR STAFF</span>
+                <a href="#" class="btn-border btn-primary buttonsound" title="Click to open application form" data-toggle="modal" data-target="#order-modal">
+                    <span class="btn btn-primary btn-lg buttonsound"><i class="fa fa-play buttonsound" aria-hidden="true"></i> APPLY FOR STAFF</span>
                 </a>
             </div>
         </div>
@@ -144,18 +150,13 @@ function aud_play_pause() {
 
 
     <!-- Footer -->
-    <footer class="footer text-center" id="follow-us">
+    <footer>
         <div class="container">
-            <p> &copy; 2022 <a title="xAyman"> NoRage | Crafted By ❤️<a href="https://xayman.net">xAyman</a></a></p>
+            <img src="img/favicon.png" class="logo-bottom">
+            <p class="footer-2 text-center" id="follow-us"> &copy; 2022 NoRage | Crafted By<a title="xAyman" target="_blank">  ❤️<a href="https://xayman.net">xAyman</a></a></p>
+            <p class="text-center" id="follow-us"> <a href="https://github.com/BlueXAyman/norage" target="_blank">Github<strong>    |    </strong><a href="http://status.xayman.net" target="blank">Status Page</a></a></p>
         </div>
     </footer>
-
-    <!-- Scroll to top button -->
-    <div id="toTop" class="to-top">
-        <a href="#" class="To the top">
-            <i class="fa fa-angle-up"></i>
-        </a>
-    </div>
 
     <!-- Order modal -->
     <div class="modal fade" id="order-modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -196,7 +197,7 @@ function aud_play_pause() {
                             </div>
                         <div class="form-group has-feedback">
                             <label for="order-phone">When did you join the Guild?</label>
-                            <input type="text" class="form-control" name="When did you join the Guild?" placeholder="dd/mm/yyyy" required="" pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$"> 
+                            <input type="date" class="form-control" name="When did you join the Guild?" placeholder="dd/mm/yyyy" required=""> 
                         </div>
                         <div class="form-group has-feedback">
                             <label for="order-phone">Why do you want to be a staff Member?</label>

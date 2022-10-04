@@ -44,6 +44,14 @@
     position: fixed  ;
   }
 }
+@media (max-width: 500px) and (min-width: 100px) {
+  .technoblade-text {
+    display: none;
+  }
+  .techno {
+    display: none;
+  }
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
@@ -6688,6 +6696,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
+    margin-right: -600px;
   }
 }
 .navbar-toggle {
@@ -9620,6 +9629,27 @@ a {
 }
 .standard-section.section-promo .triangle.triangle-down .glyphicon,
 .standard-section.section-promo .triangle.triangle-down .fa {
+  top: auto;
+  bottom: 14px;
+  left: 13px;
+}
+.standard-section.section-promo1 {
+  overflow: hidden;
+  border-top: 10px solid #FFD500;
+}
+.standard-section.section-promo1 .triangle.triangle-up {
+  top: -24px;
+}
+.standard-section.section-promo1 .triangle.triangle-up .glyphicon,
+.standard-section.section-promo1 .triangle.triangle-up .fa {
+  top: 14px;
+  right: 15px;
+}
+.standard-section.section-promo1 .triangle.triangle-down {
+  bottom: -40px;
+}
+.standard-section.section-promo1 .triangle.triangle-down .glyphicon,
+.standard-section.section-promo1 .triangle.triangle-down .fa {
   top: auto;
   bottom: 14px;
   left: 13px;
