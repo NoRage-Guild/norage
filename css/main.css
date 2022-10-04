@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   box-sizing: border-box
 }
@@ -157,3 +158,8 @@
 .options input {
 visibility: hidden;
 }
+=======
+.options {
+  color: black;
+}
+>>>>>>> 525700041ce2e679719acae2b6d5adffcd073bfe
