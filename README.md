@@ -1,5 +1,7 @@
 # NoRage Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cdb4a0af-1c9c-4299-bec4-c9191b67e9e3/deploy-status)](https://app.netlify.com/sites/xayman/deploys)
+
 **Website made for [NoRage](https://discord.gg/mzM9azY6Dm)**
 
 *Built by xAyman, The code is not all by me, some of the code may be acquired from third party websites other than github such as codepen, stackoverflow...*
