@@ -1,24 +1,22 @@
 <<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
     <head>
-
         <script>
-            $(document).ready(function() {
+        $(document).ready(function() {
         
-        var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
-        var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+            var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+            var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
         
-        $(".buttonsound").mousedown(function() {
-          audio2.load();
-          audio2.play();
-        });
-          
-        $(".buttonsound").mouseup(function() {
-          audio.load();
-          audio.play();
-        });
+            $(".buttonsound").mousedown(function() {
+                audio2.load();
+                audio2.play();
+            });
+            
+            $(".buttonsound").mouseup(function() {
+                audio.load();
+                audio.play();
+            });
         });
         </script>
     <!-- Template styles -->
@@ -31,25 +29,24 @@
   <link rel="icon" href="img/favicon.png" type="image/png">
 
 
-  <div class="sidebar">
+<div class="sidebar">
     <a class="sidebar-switcher" href="#" title="music" onclick="aud_play_pause()">
         <i class="fa fa-music"></i>
         <audio id="myAudio" source src="https://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type='audio/mp4'>
-        <source src="https://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis'>Your user agent does not support the HTML5 Audio element.
+            <source src="https://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis'>Your user agent does not support the HTML5 Audio element.
         </audio>
-<script>
-function aud_play_pause() {
-  var myAudio = document.getElementById("myAudio");
-  if (myAudio.paused) {
-    myAudio.play();
-  } else {
-    myAudio.pause();
-  }
-}
-</script>
-
+        <script>
+        function aud_play_pause() {
+            var myAudio = document.getElementById("myAudio");
+            if (myAudio.paused) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+        </script>
     </a>
-    </div> 
+</div> 
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
