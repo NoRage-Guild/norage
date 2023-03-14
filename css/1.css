@@ -9977,6 +9977,11 @@ a {
   border-top: 10px solid #2f85d7;
   border-bottom: 10px solid #2f85d7;
 }
+
+.standard-sections.section-promos {
+  overflow: hidden;
+  border-top: 10px solid #2f85d7;
+  }
 .standard-section.section-promo .triangle.triangle-up {
   top: -24px;
 }

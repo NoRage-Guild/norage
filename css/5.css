@@ -9615,6 +9615,10 @@ a {
   border-top: 10px solid #FFAA00;
   border-bottom: 10px solid #FFAA00;
 }
+.standard-sections.section-promos {
+  overflow: hidden;
+  border-top: 10px solid #FFAA00;
+  }
 .standard-section.section-promo .triangle.triangle-up {
   top: -24px;
 }
