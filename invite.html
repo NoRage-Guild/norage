@@ -54,15 +54,15 @@ function aud_play_pause() {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="keywords" content="xayman, minecraftma, mcma, bluexayman, norage, hypixel, hypixel guild" />
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://xayman.net/norage/staff_app">
+    <meta property="og:url" content="https://xayman.net/norage/invite">
     <meta property="og:title" content="NoRage | Hypixel Guild Official Website">
-    <meta property="og:description" content="NoRage is a new rising hypixel guild made in late 2021. We are a newly formed guild consisting of friends and players from all around the network! We are opening our guild to all members and are looking to make new friends. We play any and all gamemodes, and accept players from all gamemodes.
+    <meta property="og:description" content="NoRage Guild Official Public Stats Bot
     ">
     <meta property="og:image" content="https://i.ibb.co/L91zKfC/Untitled-1.png">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>NoRage</title>
+    <title>NoRage | Invite</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
@@ -134,13 +134,13 @@ function aud_play_pause() {
                 <div  aria-hidden="true"></i></span></div>
                 <div class="clearfix"></div>
                 <a style="cursor:default">
-                <h2 class="digit-header">Staff App</h2>
-                <h3 class="signature-header"><small>NoRage  <strong>Guild</strong></small></h3>
+                <h2 class="digit-header">Stats Bot</h2>
+                <h3 class="signature-header"><small>NoRage  <strong>Bot</strong></small></h3>
             </a>
                 <p class="section-description"><span class=""><span class="main-color"></span></p>
 
-                <a href="#" class="btn-border btn-primary buttonsound" title="Click to open application form" data-toggle="modal" data-target="#order-modal">
-                    <span class="btn btn-primary btn-lg buttonsound"><i class="fa fa-play buttonsound" aria-hidden="true"></i> APPLY FOR STAFF</span>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=624599474102337537&permissions=412317240384&scope=bot" target="_blank" class="btn-border btn-primary buttonsound" title="Click to invite bot">
+                    <span class="btn btn-primary btn-lg buttonsound"><i class="fa fa-play buttonsound" aria-hidden="true"></i> INVITE</span>
                 </a>
             </div>
         </div>
@@ -158,75 +158,6 @@ function aud_play_pause() {
         </div>
     </footer>
 
-    <!-- Order modal -->
-    <div class="modal fade" id="order-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h3 class="modal-title">Application Form</h3>
-                </div>
-                <form name="staff" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                    <div class="modal-body">
-                        <blockquote>
-                            <p>Make sure you are a Guild member before applying, if you are. Please be patient and allow the staff team to review your application</p>
-                            <footer>We will mention you on Discord if you got accepted or if denied with a reason<cite title="Source Title"></cite></footer>
-                        </blockquote>
-                        <div class="form-group has-feedback">
-                            <label for="order-first-name">IGN</label>
-                            <input type="text" class="form-control" name="ign" placeholder="Enter your in game name" required="" pattern="^[a-zA-Z0-9_]{2,16}$">
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="order-last-name">Discord Tag</label>
-                            <input type="text" class="form-control" name="discord" placeholder="e.g xayman" required="">
-                        </div>
-
-                        <div class="form-group has-feedback">
-                            <label for="order-email">What position are you applying for?</label>
-                            <select class="form-control" name="game">
-                                <option class="options" value="">--Please pick a position--</option>
-                                <option class="options" value="Officer">Officer</option>
-                                <option class="options" value="Discord Helper">Discord Helper</option>
-                                <option class="options" value="Discord Moderator">Discord Moderator</option>
-                                <option class="options" value="Discord Admin">Discord Admin</option>
-                                <option class="options" value="Developer">Developer</option>
-
-
-
-                            </select>
-                            </div>
-                        <div class="form-group has-feedback">
-                            <label for="order-phone">When did you join the Guild?</label>
-                            <input type="date" class="form-control" name="When did you join the Guild?" placeholder="dd/mm/yyyy" required=""> 
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="order-phone">Why do you want to be a staff Member?</label>
-                            <input type="text" class="form-control" name="Why do you want to be a staff Member?" placeholder="Enter answer" required=""> 
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="order-phone">Do you have any previous experience with the position you are applying for?</label>
-                            <input type="text" class="form-control" name="Do you have any previous experience Label" placeholder="Enter asnwer" required=""> 
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="order-company">Scenario: You join hypixel to see Jack insulting Natasha in the guild chat, you ask them what's wrong, and you manage to get the following answers.. | Jack: I was just playing bedwars and Natasha kept telling jokes because I am black | Natasha: I only insulted him because he called me a "Women" because I couldn't protect the bed... - How do you manage this situation?</label>
-                            <input type="text" class="form-control" name="Scenario Label" placeholder="Enter answer" required="">
-                        </div>
-                        <div class="form-group has-feedback">
-                            <label for="order-company">Do you have something you want to add? (Anything)</label>
-                            <input type="text" class="form-control" name="Optional Info Label" placeholder="Enter answer" required="">
-                        </div>
-                         <div data-netlify-recaptcha="true">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Send Application</button><button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-    </div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
